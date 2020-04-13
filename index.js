@@ -4,7 +4,6 @@
 // Require needed modules
 let express = require('express')
 let layouts = require('express-ejs-layouts')
-
 // creata an app instance
 let app = express()
 /*******************************************
@@ -21,6 +20,9 @@ app.use(express.static('static'))
 /*******************************************
  * ROUTES
  ******************************************/
+//Controllers
+app.use('/auth',require('./controllers/auth'))
+
 // create a home page
 app.get('/',(req,res)=>{
     res.render('home')
