@@ -1,5 +1,5 @@
 /*******************************************
- * REQUIRED
+ * NODE-MODULES
  ******************************************/
 // Require needed modules
 let express = require('express')
@@ -17,6 +17,8 @@ app.use(layouts)
 // Set up static folder with 
 app.use(express.static('static'))
 
+// Decrypt variables coming in via POST routes from forms
+app.use(express.urlencoded({extended:false}))
 /*******************************************
  * ROUTES
  ******************************************/

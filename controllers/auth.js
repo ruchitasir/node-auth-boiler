@@ -6,8 +6,14 @@ router.get('/login',(req,res)=>{
      res.render('auth/login')
 })
 
+// Post auth login
+router.post('/login',(req,res)=>{
+    console.log('data', req.body)
+    res.send("Hello post")
+})
+
 router.get('/signup',(req,res)=>{
-    res.send('stub- sign up form')
+    res.render('auth/signup')
 })
 
 //Export (allow me to include this in another page)
