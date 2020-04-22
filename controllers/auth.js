@@ -56,14 +56,16 @@ router.post('/signup',(req,res)=>{
                     }
                     console.log("Error: ",e)
                 })
+                res.render('auth/signup',{data: req.body, alerts: req.flash()})
             }
             else{
                 // Generic message for any other issue
                 req.flash('error','server error')
+                 //Redirect back to sign uo
+                res.redirect('/auth/signup')
 
             }
-            //Redirect back to sign uo
-            res.redirect('/auth/signup')
+           
         })
     }
 })
