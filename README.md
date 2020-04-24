@@ -36,8 +36,8 @@ This is a boilerplate for an Express app with local user authentication. It exit
 
 | Method | Path | Purpose |
 |------------|------------------------------|------------------------|
-| GET | ' / ' | Home page |
-| GET | ' * ' | Catch-all 404s |
+| GET | ' /  ' | Home page |
+| GET | ' * ' | Catch-all for 404s |
 
 **Routes in controllers/auth.js**
 
