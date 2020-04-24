@@ -166,7 +166,7 @@ git remote add origin <new_repo_link>
 git push origin master
 ```
 
-Happy developing!
+**Happy developing!**
 
 
 
