@@ -32,4 +32,37 @@ This is a boilerplate for an Express app with local user authentication. It exit
 
 ## Included Routes
 
+**Routes in Index**
+
+| Method | Path | Purpose |
+|------------|------------------------------|------------------------|
+| GET | '/' | Home page |
+| GET | '*' | Catch-all 404s |
+
+**Routes in controllers/auth.js**
+
+| Method | Path | Purpose |
+|------------|------------------------------|------------------------|
+| GET | '/auth/login' | Render login form |
+| POST | '/auth/login' | Process login data |
+| GET | '/auth/signup' | Render signup form |
+| POST | '/auth/signup' | Process signup data |
+| GET | '/auth/logout' | Remove user from session + redirect |
+
+**Routes in controllers/profile.js**
+
+| Method | Path | Purpose |
+|------------|------------------------------|------------------------|
+| GET | '/profile/user' | Show user dashboard (authorized user only) |
+| GET | '/profile/admin' | Show admin dashboard (authorized admin only) |
+| GET | '/profile/guest/:id' | View user dashboard as guest (authorized user only) |
+
+
+
+
+
+
+
+
+
 ## Directions For Use
