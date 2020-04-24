@@ -87,3 +87,15 @@ Remove defaulty stuff. For example:
 * Description and Repository fields in package.json
 * Remove this boilerplate's readme content
 * Switch Favicon to porject-specific one (in `layout.ejs` head section)
+
+### 4. Create a new database for the new project
+
+```sh
+createdb <new_db_name>
+```
+
+**For example**
+
+```sh
+createdb new_db
+```
