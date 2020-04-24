@@ -97,9 +97,30 @@ createdb <new_db_name>
 **For example**
 
 ```sh
-createdb new_db
+createdb my_new_db
 ```
 
 ### 5. Alter Sequelize Config File
 
 In `config/config.json`, update the database name to the one created in step 4. Other settings likely okay, but check username, password and dialect.
+
+### 6. Check user model for relevance to new project's needs
+
+For example, if the new project doesn't need a birthday field, then delete it from the user model and user migration files.
+
+### 7. Run the sequelize migrations
+
+```sh
+sequelize db:migrate
+```
+
+
+
+
+
+
+
+
+
+
+
