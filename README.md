@@ -7,6 +7,6 @@ This is a boilerplate for an Express app with local user authentication. It exit
 * Passport and passport-local
 * Sessions for saving user info and displaying flash messages
 * Hashed passwords
-* EJS Templating and EJS layouts
+* EJS templating and EJS layouts
 * Sequelize User model
 * Materialize styling- nav and footer
