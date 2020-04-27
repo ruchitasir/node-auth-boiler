@@ -147,7 +147,7 @@ Currently if we run this command:
 git remote -v
 ```
 
-It will show `origin` as being hooked up the boilerplate repository. We want a fresh repository instead, so let's delete the origin remote:
+It will show `origin` as being hooked up with the boilerplate repository. We want a fresh repository instead, so let's delete the origin remote:
 
 
 ```sh
